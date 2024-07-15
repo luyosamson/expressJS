@@ -1,4 +1,4 @@
-const app=require('express');
+const app=require('express')();
 const PORT=4000;
 app.listen(
     PORT,
@@ -8,3 +8,6 @@ app.listen(
 app.get('/getRequest',(req,res)=>{
     res.send("Hello!this is GET METHOD")
 });
+app.get('/postRequest',(req,res)=>{
+    res.send("Hello!This is a POST METHOD")
+})
